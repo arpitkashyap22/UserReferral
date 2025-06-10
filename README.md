@@ -32,7 +32,7 @@ A Spring Boot application that implements a user referral system with JWT authen
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/user-referral.git
+git clone https://github.com/arpitkashyap22/UserReferral.git
 cd user-referral
 ```
 
