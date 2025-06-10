@@ -57,8 +57,8 @@ The application will start on `http://localhost:8080`
 
 ### Authentication Endpoints
 
-- POST `/api/auth/signup` - Register a new user
-- POST `/api/auth/login` - Login and get JWT token
+- POST `/api/users/signup` - Register a new user
+- POST `/api/users/login` - Login and get JWT token
 
 ### Profile Endpoints
 
