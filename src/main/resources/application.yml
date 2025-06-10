@@ -1,0 +1,48 @@
+#spring:
+#  application:
+#    name: user-referral-system
+#
+#  # Database Configuration
+#  datasource:
+#    url: jdbc:h2:file:./data/referraldb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  # JPA Configuration
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.H2Dialect
+#
+#  # H2 Console Configuration
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#      settings:
+#        web-allow-others: false
+#
+## Server Configuration
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /api/v1
+#
+## JWT Configuration
+#jwt:
+#  secret: ${JWT_SECRET:your-256-bit-secret-key-here-make-it-long-and-secure}
+#  expiration: 86400000 # 24 hours in milliseconds
+#
+## Logging Configuration
+#logging:
+#  level:
+#    root: INFO
+#    com.example.referral: DEBUG
+#    org.springframework.security: INFO
+#    org.hibernate.SQL: DEBUG

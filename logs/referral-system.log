@@ -1,0 +1,715 @@
+2025-06-11 00:04:39,999 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:04:40,043 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:04:40,049 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-11 00:04:43,449 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-11 00:04:43,465 INFO o.s.b.StartupInfoLogger [main] Starting UserReferralApplication using Java 23.0.1 with PID 24391 (/Users/arpit/Developer/SpringBoot/UserReferral/target/classes started by arpit in /Users/arpit/Developer/SpringBoot/UserReferral)
+2025-06-11 00:04:43,467 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-11 00:04:43,468 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-11 00:04:43,978 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11 00:04:44,001 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-06-11 00:04:44,375 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-06-11 00:04:44,379 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:04:44,380 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-11 00:04:44,380 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-11 00:04:44,400 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-11 00:04:44,400 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 909 ms
+2025-06-11 00:04:44,472 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-06-11 00:04:44,556 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:referraldb user=SA
+2025-06-11 00:04:44,557 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-06-11 00:04:44,562 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:referraldb'
+2025-06-11 00:04:44,651 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11 00:04:44,683 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-11 00:04:44,698 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-06-11 00:04:44,798 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11 00:04:44,820 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11 00:04:45,241 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11 00:04:45,242 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:04:45,429 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2025-06-11 00:04:45,623 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11 00:04:45,872 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-11 00:04:45,914 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a68932b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b7526a9, org.springframework.security.web.context.SecurityContextHolderFilter@1e8f20bf, org.springframework.security.web.header.HeaderWriterFilter@5a318745, org.springframework.web.filter.CorsFilter@18f37d6e, org.springframework.security.web.authentication.logout.LogoutFilter@13c0ced1, com.example.referral.security.JwtRequestFilter@19cad9f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71a18feb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26652743, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d1b91d1, org.springframework.security.web.session.SessionManagementFilter@45b4d2ff, org.springframework.security.web.access.ExceptionTranslationFilter@6af6a3b, org.springframework.security.web.access.intercept.AuthorizationFilter@35408036]
+2025-06-11 00:04:46,254 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:04:46,265 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-06-11 00:04:46,274 INFO o.s.b.StartupInfoLogger [main] Started UserReferralApplication in 3.054 seconds (process running for 3.392)
+2025-06-11 00:04:46,749 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11 00:04:46,749 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-06-11 00:04:46,751 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 2 ms
+2025-06-11 00:04:54,187 INFO c.e.r.c.UserController [http-nio-8080-exec-2] trying to signup: test@example.com
+2025-06-11 00:04:54,199 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Starting signup process for email: test@example.com
+2025-06-11 00:04:54,199 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Processing referral code: ABC123
+2025-06-11 00:04:54,199 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Finding user by referral code: ABC123
+2025-06-11 00:04:54,283 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Found referrer with email: john.doe@example.com
+2025-06-11 00:04:54,284 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Checking if email already exists: test@example.com
+2025-06-11 00:04:54,290 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Generated referral code: 54C81O
+2025-06-11 00:04:54,291 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Creating new user with email: test@example.com
+2025-06-11 00:04:54,383 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Saving user to database
+2025-06-11 00:04:54,400 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Successfully saved user with ID: 6
+2025-06-11 00:04:54,400 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Creating referral for user: test@example.com referred by: john.doe@example.com
+2025-06-11 00:04:54,407 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 42102, SQLState: 42S02
+2025-06-11 00:04:54,408 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-2] Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]
+2025-06-11 00:04:54,412 ERROR c.e.r.s.UserService [http-nio-8080-exec-2] Error creating referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+2025-06-11 00:04:54,412 ERROR c.e.r.s.UserService [http-nio-8080-exec-2] Error during signup for email test@example.com: Failed to create referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+java.lang.RuntimeException: Failed to create referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+	at com.example.referral.service.UserService.signup(UserService.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.micrometer.core.aop.TimedAspect.processWithTimer(TimedAspect.java:227)
+	at io.micrometer.core.aop.TimedAspect.perform(TimedAspect.java:202)
+	at io.micrometer.core.aop.TimedAspect.timedMethod(TimedAspect.java:194)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.referral.service.UserService$$SpringCGLIB$$0.signup(<generated>)
+	at com.example.referral.controller.UserController.signup(UserController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.example.referral.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:72)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-11 00:04:58,087 INFO c.e.r.c.UserController [http-nio-8080-exec-4] trying to signup: test@example.com
+2025-06-11 00:04:58,091 INFO c.e.r.s.UserService [http-nio-8080-exec-4] Starting signup process for email: test@example.com
+2025-06-11 00:04:58,092 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Processing referral code: ABC123
+2025-06-11 00:04:58,092 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Finding user by referral code: ABC123
+2025-06-11 00:04:58,099 INFO c.e.r.s.UserService [http-nio-8080-exec-4] Found referrer with email: john.doe@example.com
+2025-06-11 00:04:58,100 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Checking if email already exists: test@example.com
+2025-06-11 00:04:58,102 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Generated referral code: IVZ6H4
+2025-06-11 00:04:58,102 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Creating new user with email: test@example.com
+2025-06-11 00:04:58,211 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Saving user to database
+2025-06-11 00:04:58,213 INFO c.e.r.s.UserService [http-nio-8080-exec-4] Successfully saved user with ID: 7
+2025-06-11 00:04:58,213 DEBUG c.e.r.s.UserService [http-nio-8080-exec-4] Creating referral for user: test@example.com referred by: john.doe@example.com
+2025-06-11 00:04:58,215 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 42102, SQLState: 42S02
+2025-06-11 00:04:58,216 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]
+2025-06-11 00:04:58,216 ERROR c.e.r.s.UserService [http-nio-8080-exec-4] Error creating referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+2025-06-11 00:04:58,216 ERROR c.e.r.s.UserService [http-nio-8080-exec-4] Error during signup for email test@example.com: Failed to create referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+java.lang.RuntimeException: Failed to create referral: could not prepare statement [Table "REFERRAL" not found; SQL statement:
+select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only [42102-224]] [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]; SQL [select r1_0.id from referral r1_0 where r1_0.referrer_id=? and r1_0.referee_id=? fetch first ? rows only]
+	at com.example.referral.service.UserService.signup(UserService.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.micrometer.core.aop.TimedAspect.processWithTimer(TimedAspect.java:227)
+	at io.micrometer.core.aop.TimedAspect.perform(TimedAspect.java:202)
+	at io.micrometer.core.aop.TimedAspect.timedMethod(TimedAspect.java:194)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.referral.service.UserService$$SpringCGLIB$$0.signup(<generated>)
+	at com.example.referral.controller.UserController.signup(UserController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.example.referral.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:72)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-11 00:05:44,344 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:05:44,361 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:05:44,379 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-11 00:05:46,177 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-11 00:05:46,195 INFO o.s.b.StartupInfoLogger [main] Starting UserReferralApplication using Java 23.0.1 with PID 24486 (/Users/arpit/Developer/SpringBoot/UserReferral/target/classes started by arpit in /Users/arpit/Developer/SpringBoot/UserReferral)
+2025-06-11 00:05:46,195 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-11 00:05:46,195 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-11 00:05:46,726 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11 00:05:46,749 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-06-11 00:05:47,120 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-06-11 00:05:47,124 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:05:47,125 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-11 00:05:47,125 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-11 00:05:47,145 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-11 00:05:47,145 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 925 ms
+2025-06-11 00:05:47,218 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-06-11 00:05:47,295 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:referraldb user=SA
+2025-06-11 00:05:47,299 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-06-11 00:05:47,305 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:referraldb'
+2025-06-11 00:05:47,395 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11 00:05:47,425 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-11 00:05:47,440 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-06-11 00:05:47,546 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11 00:05:47,569 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11 00:05:48,003 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11 00:05:48,004 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:05:48,199 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2025-06-11 00:05:48,390 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11 00:05:48,641 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-11 00:05:48,679 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@727d937a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@130901fd, org.springframework.security.web.context.SecurityContextHolderFilter@71a18feb, org.springframework.security.web.header.HeaderWriterFilter@327fd5c9, org.springframework.web.filter.CorsFilter@659f5f32, org.springframework.security.web.authentication.logout.LogoutFilter@25767bd9, com.example.referral.security.JwtRequestFilter@19beeb61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8d56ddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bac4423, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20fdd484, org.springframework.security.web.session.SessionManagementFilter@122557f8, org.springframework.security.web.access.ExceptionTranslationFilter@11261fc9, org.springframework.security.web.access.intercept.AuthorizationFilter@2a68932b]
+2025-06-11 00:05:48,967 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [/Users/arpit/Developer/SpringBoot/UserReferral/target/classes/data.sql]: INSERT INTO users (email, password, name, referral_code, referral_points) VALUES ('john.doe@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'John Doe', 'ABC123', 1), ('jane.smith@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Jane Smith', 'DEF456', 0), ('bob.wilson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Bob Wilson', 'GHI789', 0), ('alice.johnson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Alice Johnson', 'JKL012', 0), ('charlie.brown@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Charlie Brown', 'MNO345', 0)
+2025-06-11 00:05:48,970 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:05:48,971 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:05:48,971 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2025-06-11 00:05:48,972 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2025-06-11 00:05:48,981 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-11 00:05:48,988 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [/Users/arpit/Developer/SpringBoot/UserReferral/target/classes/data.sql]: INSERT INTO users (email, password, name, referral_code, referral_points) VALUES ('john.doe@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'John Doe', 'ABC123', 1), ('jane.smith@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Jane Smith', 'DEF456', 0), ('bob.wilson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Bob Wilson', 'GHI789', 0), ('alice.johnson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Alice Johnson', 'JKL012', 0), ('charlie.brown@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Charlie Brown', 'MNO345', 0)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.example.referral.UserReferralApplication.main(UserReferralApplication.java:12)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of file [/Users/arpit/Developer/SpringBoot/UserReferral/target/classes/data.sql]: INSERT INTO users (email, password, name, referral_code, referral_points) VALUES ('john.doe@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'John Doe', 'ABC123', 1), ('jane.smith@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Jane Smith', 'DEF456', 0), ('bob.wilson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Bob Wilson', 'GHI789', 0), ('alice.johnson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Alice Johnson', 'JKL012', 0), ('charlie.brown@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Charlie Brown', 'MNO345', 0)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+INSERT INTO users (email, password, name, referral_code, referral_points) VALUES ('john.doe@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'John Doe', 'ABC123', 1), ('jane.smith@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Jane Smith', 'DEF456', 0), ('bob.wilson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Bob Wilson', 'GHI789', 0), ('alice.johnson@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Alice Johnson', 'JKL012', 0), ('charlie.brown@example.com', '$2a$10$xn3LI/AjqicFYZFruSwve.681477XaVNaUQbr1gioaWPn4t1KsnmG', 'Charlie Brown', 'MNO345', 0) [42104-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8051)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8035)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8024)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7990)
+	at org.h2.command.Parser.parseInsert(Parser.java:1540)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+2025-06-11 00:06:33,410 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-11 00:06:33,424 INFO o.s.b.StartupInfoLogger [main] Starting UserReferralApplication using Java 23.0.1 with PID 24532 (/Users/arpit/Developer/SpringBoot/UserReferral/target/classes started by arpit in /Users/arpit/Developer/SpringBoot/UserReferral)
+2025-06-11 00:06:33,424 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-11 00:06:33,424 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-11 00:06:33,943 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11 00:06:33,964 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-06-11 00:06:34,322 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-06-11 00:06:34,326 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:06:34,327 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-11 00:06:34,327 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-11 00:06:34,348 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-11 00:06:34,349 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 904 ms
+2025-06-11 00:06:34,422 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-06-11 00:06:34,507 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:referraldb user=SA
+2025-06-11 00:06:34,507 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-06-11 00:06:34,513 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:referraldb'
+2025-06-11 00:06:34,615 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11 00:06:34,645 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-11 00:06:34,659 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-06-11 00:06:34,757 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11 00:06:34,778 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11 00:06:35,204 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11 00:06:35,227 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:06:35,424 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2025-06-11 00:06:35,618 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11 00:06:35,867 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-11 00:06:35,906 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41a372c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12bb3666, org.springframework.security.web.context.SecurityContextHolderFilter@7bbc3b6e, org.springframework.security.web.header.HeaderWriterFilter@6d89c923, org.springframework.web.filter.CorsFilter@18c2b4c6, org.springframework.security.web.authentication.logout.LogoutFilter@1e5e0e75, com.example.referral.security.JwtRequestFilter@3638a852, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14404be2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63a6dffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c71d704, org.springframework.security.web.session.SessionManagementFilter@1476e447, org.springframework.security.web.access.ExceptionTranslationFilter@1911427a, org.springframework.security.web.access.intercept.AuthorizationFilter@489ec791]
+2025-06-11 00:06:36,236 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:06:36,248 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-06-11 00:06:36,257 INFO o.s.b.StartupInfoLogger [main] Started UserReferralApplication in 3.077 seconds (process running for 3.449)
+2025-06-11 00:06:36,692 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11 00:06:36,692 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-06-11 00:06:36,693 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 1 ms
+2025-06-11 00:06:41,542 INFO c.e.r.c.UserController [http-nio-8080-exec-1] trying to signup: test@example.com
+2025-06-11 00:06:41,552 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Starting signup process for email: test@example.com
+2025-06-11 00:06:41,553 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Processing referral code: ABC123
+2025-06-11 00:06:41,553 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Finding user by referral code: ABC123
+2025-06-11 00:06:41,630 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Found referrer with email: john.doe@example.com
+2025-06-11 00:06:41,630 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Checking if email already exists: test@example.com
+2025-06-11 00:06:41,637 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Generated referral code: JCRBLR
+2025-06-11 00:06:41,637 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Creating new user with email: test@example.com
+2025-06-11 00:06:41,733 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Saving user to database
+2025-06-11 00:06:41,747 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Successfully saved user with ID: 6
+2025-06-11 00:06:41,747 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Creating referral for user: test@example.com referred by: john.doe@example.com
+2025-06-11 00:06:41,755 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Successfully created referral for user: test@example.com referred by john.doe@example.com
+2025-06-11 00:06:45,558 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Attempting to login user: test@example.com
+2025-06-11 00:06:45,560 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Found user with email: test@example.com
+2025-06-11 00:06:45,560 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Authenticating user with email: test@example.com
+2025-06-11 00:06:45,781 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Successfully authenticated user: test@example.com
+2025-06-11 00:06:45,782 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Generating token for user: test@example.com
+2025-06-11 00:06:45,782 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Creating token for subject: test@example.com
+2025-06-11 00:06:45,794 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Generated token for user: test@example.com
+2025-06-11 00:06:45,794 INFO c.e.r.s.UserService [http-nio-8080-exec-3] Successfully logged in user: test@example.com
+2025-06-11 00:07:03,403 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-4] Validating token for user: test@example.com
+2025-06-11 00:07:03,406 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-4] Token Validated for user: test@example.com
+2025-06-11 00:07:03,414 INFO c.e.r.c.ProfileController [http-nio-8080-exec-4] Updating profile for user: test@example.com
+2025-06-11 00:07:06,919 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-5] Validating token for user: test@example.com
+2025-06-11 00:07:06,922 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-5] Token Validated for user: test@example.com
+2025-06-11 00:07:06,924 INFO c.e.r.c.ProfileController [http-nio-8080-exec-5] Getting profile for user: test@example.com
+2025-06-11 00:07:19,191 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-6] Validating token for user: test@example.com
+2025-06-11 00:07:19,192 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-6] Token Validated for user: test@example.com
+2025-06-11 00:07:45,896 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-8] Validating token for user: test@example.com
+2025-06-11 00:07:45,899 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-8] Token Validated for user: test@example.com
+2025-06-11 00:11:47,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:11:47,658 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:11:47,660 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-11 00:11:49,983 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-11 00:11:50,001 INFO o.s.b.StartupInfoLogger [main] Starting UserReferralApplication using Java 23.0.1 with PID 24792 (/Users/arpit/Developer/SpringBoot/UserReferral/target/classes started by arpit in /Users/arpit/Developer/SpringBoot/UserReferral)
+2025-06-11 00:11:50,001 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-11 00:11:50,002 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-11 00:11:50,535 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11 00:11:50,559 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-06-11 00:11:50,920 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-06-11 00:11:50,925 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:11:50,926 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-11 00:11:50,926 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-11 00:11:50,946 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-11 00:11:50,946 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 919 ms
+2025-06-11 00:11:51,020 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-06-11 00:11:51,102 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:referraldb user=SA
+2025-06-11 00:11:51,103 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-06-11 00:11:51,109 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:referraldb'
+2025-06-11 00:11:51,199 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11 00:11:51,230 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-11 00:11:51,249 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-06-11 00:11:51,345 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11 00:11:51,367 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11 00:11:51,784 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11 00:11:51,806 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:11:51,998 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2025-06-11 00:11:52,197 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11 00:11:52,447 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-11 00:11:52,485 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@489ec791, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3597174b, org.springframework.security.web.context.SecurityContextHolderFilter@2b991034, org.springframework.security.web.header.HeaderWriterFilter@3ad9f06a, org.springframework.web.filter.CorsFilter@24a38ef3, org.springframework.security.web.authentication.logout.LogoutFilter@11b5b1f2, com.example.referral.security.JwtRequestFilter@3f2f6818, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbc3b6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2531049f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4af32714, org.springframework.security.web.session.SessionManagementFilter@3299cc9f, org.springframework.security.web.access.ExceptionTranslationFilter@2f4a89fa, org.springframework.security.web.access.intercept.AuthorizationFilter@8b329ae]
+2025-06-11 00:11:52,823 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:11:52,830 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-06-11 00:11:52,839 INFO o.s.b.StartupInfoLogger [main] Started UserReferralApplication in 3.106 seconds (process running for 3.459)
+2025-06-11 00:11:53,186 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11 00:11:53,187 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-06-11 00:11:53,189 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 2 ms
+2025-06-11 00:12:14,260 INFO c.e.r.c.UserController [http-nio-8080-exec-2] trying to signup: test@example.com
+2025-06-11 00:12:14,267 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Starting signup process for email: test@example.com
+2025-06-11 00:12:14,267 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Processing referral code: ABC123
+2025-06-11 00:12:14,267 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Finding user by referral code: ABC123
+2025-06-11 00:12:14,338 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Found referrer with email: john.doe@example.com
+2025-06-11 00:12:14,338 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Checking if email already exists: test@example.com
+2025-06-11 00:12:14,344 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Generated referral code: 1S4E1K
+2025-06-11 00:12:14,345 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Creating new user with email: test@example.com
+2025-06-11 00:12:14,438 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Saving user to database
+2025-06-11 00:12:14,455 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Successfully saved user with ID: 6
+2025-06-11 00:12:14,455 DEBUG c.e.r.s.UserService [http-nio-8080-exec-2] Creating referral for user: test@example.com referred by: john.doe@example.com
+2025-06-11 00:12:14,462 INFO c.e.r.s.UserService [http-nio-8080-exec-2] Successfully created referral for user: test@example.com referred by john.doe@example.com
+2025-06-11 00:12:19,928 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Attempting to login user: test@example.com
+2025-06-11 00:12:19,932 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Found user with email: test@example.com
+2025-06-11 00:12:19,933 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Authenticating user with email: test@example.com
+2025-06-11 00:12:20,140 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Successfully authenticated user: test@example.com
+2025-06-11 00:12:20,143 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Generating token for user: test@example.com
+2025-06-11 00:12:20,143 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Creating token for subject: test@example.com
+2025-06-11 00:12:20,181 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Generated token for user: test@example.com
+2025-06-11 00:12:20,182 INFO c.e.r.s.UserService [http-nio-8080-exec-3] Successfully logged in user: test@example.com
+2025-06-11 00:12:37,141 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-4] Validating token for user: test@example.com
+2025-06-11 00:12:37,143 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-4] Token Validated for user: test@example.com
+2025-06-11 00:12:37,149 INFO c.e.r.c.ProfileController [http-nio-8080-exec-4] Updating profile for user: test@example.com
+2025-06-11 00:12:40,307 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-5] Validating token for user: test@example.com
+2025-06-11 00:12:40,309 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-5] Token Validated for user: test@example.com
+2025-06-11 00:12:40,311 INFO c.e.r.c.ProfileController [http-nio-8080-exec-5] Getting profile for user: test@example.com
+2025-06-11 00:13:41,451 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-9] Validating token for user: test@example.com
+2025-06-11 00:13:41,453 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-9] Token Validated for user: test@example.com
+2025-06-11 00:15:47,176 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:15:47,186 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:15:47,188 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-11 00:15:49,610 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-11 00:15:49,626 INFO o.s.b.StartupInfoLogger [main] Starting UserReferralApplication using Java 23.0.1 with PID 24904 (/Users/arpit/Developer/SpringBoot/UserReferral/target/classes started by arpit in /Users/arpit/Developer/SpringBoot/UserReferral)
+2025-06-11 00:15:49,626 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-11 00:15:49,626 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-11 00:15:50,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11 00:15:50,167 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-06-11 00:15:50,527 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-06-11 00:15:50,531 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:15:50,532 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-11 00:15:50,532 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-11 00:15:50,552 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-11 00:15:50,552 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 901 ms
+2025-06-11 00:15:50,625 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-06-11 00:15:50,705 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:referraldb user=SA
+2025-06-11 00:15:50,706 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-06-11 00:15:50,711 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:referraldb'
+2025-06-11 00:15:50,809 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11 00:15:50,838 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-11 00:15:50,853 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-06-11 00:15:50,954 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11 00:15:50,974 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11 00:15:51,397 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11 00:15:51,420 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:15:51,616 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2025-06-11 00:15:51,812 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11 00:15:52,066 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-11 00:15:52,104 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c1dc246, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3253d771, org.springframework.security.web.context.SecurityContextHolderFilter@3b0b20a8, org.springframework.security.web.header.HeaderWriterFilter@2baf2c6, org.springframework.web.filter.CorsFilter@2a0c76d6, org.springframework.security.web.authentication.logout.LogoutFilter@339b9869, com.example.referral.security.JwtRequestFilter@747b8f5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f3d33bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54a332e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a62384, org.springframework.security.web.session.SessionManagementFilter@6d89c923, org.springframework.security.web.access.ExceptionTranslationFilter@4baf3987, org.springframework.security.web.access.intercept.AuthorizationFilter@74a121fe]
+2025-06-11 00:15:52,421 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-11 00:15:52,428 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-06-11 00:15:52,437 INFO o.s.b.StartupInfoLogger [main] Started UserReferralApplication in 3.084 seconds (process running for 3.428)
+2025-06-11 00:15:52,853 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11 00:15:52,853 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-06-11 00:15:52,855 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 2 ms
+2025-06-11 00:16:08,343 INFO c.e.r.c.UserController [http-nio-8080-exec-1] trying to signup: test@example.com
+2025-06-11 00:16:08,349 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Starting signup process for email: test@example.com
+2025-06-11 00:16:08,350 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Processing referral code: ABC123
+2025-06-11 00:16:08,350 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Finding user by referral code: ABC123
+2025-06-11 00:16:08,427 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Found referrer with email: john.doe@example.com
+2025-06-11 00:16:08,428 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Checking if email already exists: test@example.com
+2025-06-11 00:16:08,434 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Generated referral code: YEA5HY
+2025-06-11 00:16:08,434 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Creating new user with email: test@example.com
+2025-06-11 00:16:08,526 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Saving user to database
+2025-06-11 00:16:08,540 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Successfully saved user with ID: 6
+2025-06-11 00:16:08,540 DEBUG c.e.r.s.UserService [http-nio-8080-exec-1] Creating referral for user: test@example.com referred by: john.doe@example.com
+2025-06-11 00:16:08,546 INFO c.e.r.s.UserService [http-nio-8080-exec-1] Successfully created referral for user: test@example.com referred by john.doe@example.com
+2025-06-11 00:16:11,146 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Attempting to login user: test@example.com
+2025-06-11 00:16:11,148 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Found user with email: test@example.com
+2025-06-11 00:16:11,149 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Authenticating user with email: test@example.com
+2025-06-11 00:16:11,365 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Successfully authenticated user: test@example.com
+2025-06-11 00:16:11,366 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Generating token for user: test@example.com
+2025-06-11 00:16:11,366 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-3] Creating token for subject: test@example.com
+2025-06-11 00:16:11,379 DEBUG c.e.r.s.UserService [http-nio-8080-exec-3] Generated token for user: test@example.com
+2025-06-11 00:16:11,379 INFO c.e.r.s.UserService [http-nio-8080-exec-3] Successfully logged in user: test@example.com
+2025-06-11 00:16:28,579 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-4] Validating token for user: test@example.com
+2025-06-11 00:16:28,582 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-4] Token Validated for user: test@example.com
+2025-06-11 00:16:28,588 INFO c.e.r.c.ProfileController [http-nio-8080-exec-4] Updating profile for user: test@example.com
+2025-06-11 00:16:33,875 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-5] Validating token for user: test@example.com
+2025-06-11 00:16:33,877 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-5] Token Validated for user: test@example.com
+2025-06-11 00:17:21,102 INFO c.e.r.c.UserController [http-nio-8080-exec-7] trying to signup: test2@example.com
+2025-06-11 00:17:21,108 INFO c.e.r.s.UserService [http-nio-8080-exec-7] Starting signup process for email: test2@example.com
+2025-06-11 00:17:21,109 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Processing referral code: YEA5HY
+2025-06-11 00:17:21,109 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Finding user by referral code: YEA5HY
+2025-06-11 00:17:21,115 INFO c.e.r.s.UserService [http-nio-8080-exec-7] Found referrer with email: test@example.com
+2025-06-11 00:17:21,115 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Checking if email already exists: test2@example.com
+2025-06-11 00:17:21,148 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Generated referral code: 1WEG3E
+2025-06-11 00:17:21,148 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Creating new user with email: test2@example.com
+2025-06-11 00:17:21,274 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Saving user to database
+2025-06-11 00:17:21,278 INFO c.e.r.s.UserService [http-nio-8080-exec-7] Successfully saved user with ID: 7
+2025-06-11 00:17:21,279 DEBUG c.e.r.s.UserService [http-nio-8080-exec-7] Creating referral for user: test2@example.com referred by: test@example.com
+2025-06-11 00:17:21,282 INFO c.e.r.s.UserService [http-nio-8080-exec-7] Successfully created referral for user: test2@example.com referred by test@example.com
+2025-06-11 00:17:41,107 DEBUG c.e.r.s.UserService [http-nio-8080-exec-8] Attempting to login user: test2@example.com
+2025-06-11 00:17:41,119 DEBUG c.e.r.s.UserService [http-nio-8080-exec-8] Found user with email: test2@example.com
+2025-06-11 00:17:41,119 DEBUG c.e.r.s.UserService [http-nio-8080-exec-8] Authenticating user with email: test2@example.com
+2025-06-11 00:17:41,232 DEBUG c.e.r.s.UserService [http-nio-8080-exec-8] Successfully authenticated user: test2@example.com
+2025-06-11 00:17:41,233 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-8] Generating token for user: test2@example.com
+2025-06-11 00:17:41,233 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-8] Creating token for subject: test2@example.com
+2025-06-11 00:17:41,235 DEBUG c.e.r.s.UserService [http-nio-8080-exec-8] Generated token for user: test2@example.com
+2025-06-11 00:17:41,235 INFO c.e.r.s.UserService [http-nio-8080-exec-8] Successfully logged in user: test2@example.com
+2025-06-11 00:17:53,474 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-9] Validating token for user: test@example.com
+2025-06-11 00:17:53,475 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-9] Token Validated for user: test@example.com
+2025-06-11 00:18:31,938 DEBUG c.e.r.s.JwtTokenUtil [http-nio-8080-exec-2] Validating token for user: test@example.com
+2025-06-11 00:18:31,941 INFO c.e.r.s.JwtRequestFilter [http-nio-8080-exec-2] Token Validated for user: test@example.com
+2025-06-11 00:18:41,453 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11 00:18:41,462 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-11 00:18:41,464 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
